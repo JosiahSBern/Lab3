@@ -24,6 +24,30 @@
 
     // makeAppointment - Daniel Furmanov
     // Test -Daniel Furmanov
+     //     public class AppointmentTests
+// {
+//     [Fact]
+//     public void TestBasicReservationInSinglePeriod()
+//     {
+//         // Arrange
+//         var appointmentSystem = new Appointment(5);
+        
+//         // Act
+//         bool result = appointmentSystem.MakeAppointment(2, 4, 22);
+        
+//         // Assert
+//         Assert.True(result);
+//     }
+
+//     [Fact]
+
+//         // Arrange
+//         var appointmentSystem = new Appointment(5);
+        
+//         // Act
+//         bool result = appointmentSystem.MakeAppointment(3, 4, 3);
+        
+  // Expected to succeed for a 3-min block
 }
 
 class Program {
