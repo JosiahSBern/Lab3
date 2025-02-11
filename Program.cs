@@ -7,8 +7,8 @@
 
     // findFreeBlock
 
-    // makeAppointment
-    // Test 
+    // makeAppointment - Daniel Furmanov
+    // Test -Daniel Furmanov
 }
 
 class Program {
