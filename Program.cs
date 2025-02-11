@@ -24,30 +24,14 @@
 
     // makeAppointment - Daniel Furmanov
     // Test -Daniel Furmanov
-     //     public class AppointmentTests
-// {
-//     [Fact]
-//     public void TestBasicReservationInSinglePeriod()
-//     {
-//         // Arrange
-//         var appointmentSystem = new Appointment(5);
-        
-//         // Act
-//         bool result = appointmentSystem.MakeAppointment(2, 4, 22);
-        
-//         // Assert
-//         Assert.True(result);
-//     }
-
-//     [Fact]
-
-//         // Arrange
-//         var appointmentSystem = new Appointment(5);
-        
-//         // Act
-//         bool result = appointmentSystem.MakeAppointment(3, 4, 3);
-        
-  // Expected to succeed for a 3-min block
+// Testcase Part A
+Console.WriteLine("Earliest 15-minute block: " + appoint.findFreeBlock(2,15));
+Console.WriteLine("Smallest starting minute of a valid block" + appoint.findFreeBlock(2,9));
+Console.WriteLine("No such block exists: " + appoint.findFreeBlock(2,20));
+// TestCase Part B
+Console.WriteLine("Reserving minutes 5-26 in period 4: " + appoint.makeAppointment(2, 4, 22));
+Console.WriteLine("Reserving minutes 0-2 in period 3: " + appoint.makeAppointment(3, 4, 3));
+Console.WriteLine("Reserving 30-minute block (no 30-minute block exists): " + appoint.makeAppointment(2, 4, 30));
 }
 
 class Program {
