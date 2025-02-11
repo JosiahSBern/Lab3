@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿class Appointment {
+    // Constructor
+
+    // isMinuteFree
+
+    // reserveBlock
+
+    // findFreeBlock
+
+    // makeAppointment
+}
+
+class Program {
+    public static void Main(String[] args) {
+        // Test cases
+    }
+}
