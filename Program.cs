@@ -22,7 +22,8 @@
 
     // findFreeBlock
 
-    // makeAppointment
+    // makeAppointment - Daniel Furmanov
+    // Test -Daniel Furmanov
 }
 
 class Program {
