@@ -15,7 +15,7 @@
     // PRECONDITION: 1 <= period <= periods
     // PRECONDITION: 0 <= minute <= 59
     public bool isMinuteFree(int period, int minute) {
-        return MinuteGrid[period - 1, minute]
+        return MinuteGrid[period - 1, minute];
     }
 
     // reserveBlock
