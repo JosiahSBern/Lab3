@@ -1,4 +1,5 @@
 ﻿class Appointment {
+    // Constructor
 
     private bool[,] MinuteGrid;
 
@@ -15,14 +16,41 @@
     // PRECONDITION: 1 <= period <= periods
     // PRECONDITION: 0 <= minute <= 59
     public bool isMinuteFree(int period, int minute) {
-        return MinuteGrid[period - 1, minute]
+        return MinuteGrid[period - 1, minute];
     }
 
-    // reserveBlock
+    // reserveBlock - Josiah 
+    public void reserveBlock(int period, int startMinute, int duration)
+    {
+        for (int i = startMinute; i < startMinute + duration; i++) {
+            if (i < 60)
+                MinuteGrid[period - 1, i] = false;
+        }
+    }
 
-    // findFreeBlock
+
+
+    // findFreeBlock - Josiah
+    public int findFreeBlock(int period, int duration) {
+        for (int startMinute = 0; startMinute <= 60 - duration; startMinute++) {
+            bool blockAvailable = true;
+
+            for (int i = 0; i < duration; i++) {
+                if (!isMinuteFree(period, startMinute + i)) {
+                    blockAvailable = false;
+                    break;
+                }
+            }
+
+            if (blockAvailable) 
+                return startMinute;
+        }
+        return -1;
+    }
+}
 
     // makeAppointment - Daniel Furmanov
+    
     // Test -Daniel Furmanov
 // Testcase Part A
 Console.WriteLine("Earliest 15-minute block: " + appoint.findFreeBlock(2,15));
