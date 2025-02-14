@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\josia\\.nuget\\packages\\": {},
+    "C:\\Users\\danie\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josia\\Desktop\\College\\CSC350H\\Lab3\\Lab3.csproj",
+      "projectUniqueName": "C:\\Users\\danie\\Desktop\\Lab3-1\\Lab3.csproj",
       "projectName": "Lab3",
-      "projectPath": "C:\\Users\\josia\\Desktop\\College\\CSC350H\\Lab3\\Lab3.csproj",
-      "packagesPath": "C:\\Users\\josia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josia\\Desktop\\College\\CSC350H\\Lab3\\obj\\",
+      "projectPath": "C:\\Users\\danie\\Desktop\\Lab3-1\\Lab3.csproj",
+      "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\danie\\Desktop\\Lab3-1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\josia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

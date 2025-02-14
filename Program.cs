@@ -50,23 +50,45 @@
         }
         return -1;
     }
-}
 
     // makeAppointment - Daniel Furmanov
-    
-    // Test -Daniel Furmanov
-// Testcase Part A
-Console.WriteLine("Earliest 15-minute block: " + appoint.findFreeBlock(2,15));
-Console.WriteLine("Smallest starting minute of a valid block" + appoint.findFreeBlock(2,9));
-Console.WriteLine("No such block exists: " + appoint.findFreeBlock(2,20));
-// TestCase Part B
-Console.WriteLine("Reserving minutes 5-26 in period 4: " + appoint.makeAppointment(2, 4, 22));
-Console.WriteLine("Reserving minutes 0-2 in period 3: " + appoint.makeAppointment(3, 4, 3));
-Console.WriteLine("Reserving 30-minute block (no 30-minute block exists): " + appoint.makeAppointment(2, 4, 30));
+    public bool makeAppointment(int startPeriod, int endPeriod, int duration)
+    {
+        for (int period = startPeriod; period <= endPeriod; period++) //period in the range
+        {
+            int startMinute = findFreeBlock(period, duration); //available slot
+            
+            if (startMinute != -1)
+            {
+                reserveBlock(period, startMinute, duration);
+                return true;
+            }
+        }
+        return false;
+    }
 }
-
+        // Test cases -Daniel Furmanov
 class Program {
     public static void Main(String[] args) {
-        // Test cases
+        Appointment appoint = new Appointment(8);
+        
+        // Part A test cases
+        Console.WriteLine("\nPart A: findFreeBlock");
+        Console.WriteLine("Earliest 15-minute block: " + appoint.findFreeBlock(2, 15));
+        Console.WriteLine("Smallest starting minute of a valid block: " + appoint.findFreeBlock(2, 9));
+        Console.WriteLine("No such block exists: " + appoint.findFreeBlock(2, 20));
+        
+        // Part B test cases
+        Console.WriteLine("\nPart B: makeAppointment");
+        
+        appoint.reserveBlock(2, 0, 25);
+        appoint.reserveBlock(2, 30, 30);
+        appoint.reserveBlock(3, 15, 26);
+        appoint.reserveBlock(4, 0, 5);
+        appoint.reserveBlock(4, 30, 14);
+        
+        Console.WriteLine("Reserving minutes 5-26 in period 4: " + appoint.makeAppointment(2, 4, 22));
+        Console.WriteLine("Reserving minutes 0-2 in period 3: " + appoint.makeAppointment(3, 4, 3));
+        Console.WriteLine("Reserving 30-minute block (no 30-minute block exists): " + appoint.makeAppointment(2, 4, 30));
     }
 }
